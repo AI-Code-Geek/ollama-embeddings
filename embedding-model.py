@@ -1,3 +1,4 @@
+# embedding-model.py
 import ollama
 import chromadb
 
@@ -76,18 +77,6 @@ output = ollama.generate(
     model="llama3.2",
     prompt=f"Using this data: {data}. Respond to this prompt: {prompt}"
 )
-
-# ANSI color codes for terminal formatting
-class Colors:
-    HEADER = '\033[95m'      # Magenta
-    BLUE = '\033[94m'        # Blue
-    CYAN = '\033[96m'        # Cyan
-    GREEN = '\033[92m'       # Green
-    YELLOW = '\033[93m'      # Yellow
-    RED = '\033[91m'         # Red
-    BOLD = '\033[1m'         # Bold
-    UNDERLINE = '\033[4m'    # Underline
-    END = '\033[0m'          # Reset to default
 
 # Display the final response in a nice format with colors
 print("\n" + Colors.CYAN + "=" * 80)
