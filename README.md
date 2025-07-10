@@ -1,19 +1,33 @@
 ## Running the Example
 
-### Git Repository Setup
+### Prerequisites
 
-1. **Clone the repository**:
+1. **Install Ollama and Start Ollama local model**
+    - Follow the guide: [Ollama Local AI Model Platform](https://aicodegeek.com/2025/06/18/ollama-local-ai-model-platform)
+
+
+2. **Pull Embedding model**:
+   ```bash
+   ollama pull mxbai-embed-large
+   ```
+
+3. **Install required Python packages**:
+   ```bash
+   pip install ollama chromadb
+   ```
+
+4. **Clone the repository**:
    ```bash
    git clone https://github.com/AI-Code-Geek/ollama-embeddings.git
    cd ollama-embeddings
    ```
 
-2. **Install Python virtual environment**:
+5. **Install Python virtual environment**:
    ```bash
    python3 -m venv .venv
    ```
 
-3. **Activate Python virtual environment**:
+6. **Activate Python virtual environment**:
    ```bash
    # On Windows
    .venv\Scripts\activate
@@ -22,12 +36,12 @@
    source .venv/bin/activate
    ```
 
-4. **Install required Python packages**:
+7. **Install required Python packages**:
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Run the example**:
+8. **Run the example**:
    ```bash
    python embedding-model.py
    ```
